@@ -1,6 +1,137 @@
+@import url(/src/assets/css/third-section.css);
+@import url(/src/assets/css/fourth-section.css);
+@import url(/src/assets/css/fifth-section.css);
+@import url(/src/assets/css/sixth-section.css);
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .sm-landing-bg {
+    background: linear-gradient(153deg, #fff 51%, #f3e5ad 51%);
+    height: 100%;
+  }
+
+  .landing-bg {
+    background: linear-gradient(153deg, #FEF3C7 54%, #fae9a3 54%);
+    height: 100%;
+  }
+
+  .second-bg {}
+
+  .sm-second-bg {
+    background-image: url(assets/images/BacklightsMobile.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .second-box-shadow {
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07),
+
+      0px 25px 50px -12px rgba(255, 255, 255, 0.25);
+  }
+
+  .shoes-bg {
+    width: 367px;
+    height: 372px;
+    border-radius: 50px;
+    border: 1px solid #FBBF24;
+    background-color: #FBBF24;
+    position: absolute;
+    z-index: -1;
+    top: 11%;
+    left: 10%;
+  }
+
+  .sm-shoes-bg {
+    width: 273px;
+    height: 277px;
+    border-radius: 50px;
+    border: 1px solid #FBBF24;
+    background-color: #FBBF24;
+    position: absolute;
+    z-index: -1;
+    top: 11%;
+    left: 15%;
+  }
+
+  .third-card-shadow {
+    box-shadow: 0px 0px 10px 0px #00000012,
+      0px 20px 25px -5px #0000001A;
+
+  }
+
+ 
+
+  .sm-bg-desktop {
+    position: relative;
+    overflow: visible;
+    z-index: 5;
+  }
+
+  .sm-bg-desktop::before {
+    top: -20%;
+    left: -10%;
+    content: "";
+    background-image: url(assets/images/Deco-video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    overflow: visible;
+    width: 440.18px;
+    height: 386px;
+    z-index: 5;
+  }
+  .sm-green-circle{
+    position: absolute;
+    top: 202px;
+    left: 43px;
+    width: 49px;
+    height: 50px;
+    opacity: 0.75;
+    border-radius: 50px;
+    background-color: #15803D;
+    z-index: 15;
+  }
+
+  .green-circle {
+    position: absolute;
+    top: 300px;
+    left: 70px;
+    background-color: #15803D;
+    opacity: 0.75;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    z-index: 10;
+  }
+
+  ul.custom-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  ul.custom-list li {
+    position: relative;
+    padding-left: 1.5em;
+    margin-bottom: 0.5em;
+  }
+
+  ul.custom-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 1em;
+    height: 1em;
+    background-repeat: no-repeat;
+    background-image: url(assets/icons/check.svg)
+  }
+
+}
 
 body {
   margin: 0;

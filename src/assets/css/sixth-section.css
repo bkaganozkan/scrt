@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .section-bg {
+        background-image: url(/src/assets/images/chart.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: unset;
+        z-index: 10;
+        position: relative;
+    }
+
+    .section-bg::after {
+        content: "";
+        position: absolute;
+        top: -25px;
+        left: -75px;
+        background-image: url(/src/assets/images/Ellipses.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+        width: 90%;
+        height: 100%;
+    }
+
+    .sm-section-bg {
+        background-image: url(/src/assets/images/chart.png);
+        background-repeat: no-repeat;
+        background-size: unset;
+        z-index: 10;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .sm-section-bg::after {
+        content: "";
+        position: absolute;
+        top: 60px;
+        left: 210px;
+        background-image: url(/src/assets/images/Ellipses.png);
+        background-repeat: no-repeat;
+        background-size: inherit;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+    }
+
+    .section-position {
+        top: 20px;
+        left: 50px;
+    }
+
+    .sm-section-position {
+        top: 10px;
+        left: 20px;
+    }
+
+    .rectangle-down {}
+
+    .locator-box-shadow {
+        box-shadow: 0px 0px 10px 0px #00000012,
+            0px 20px 25px -5px #0000001A;
+    }
+
+    .map-green-pointer {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: #D9F99D;
+        border: 3px solid #A3E635;
+    }
+}

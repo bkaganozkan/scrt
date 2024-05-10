@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .fourth-bg{
+        background-color: #FDE68A;
+    }
+
+    .card-shadow{
+        box-shadow: 0px 0px 6px 0px #00000012,
+        0px 10px 15px -3px #0000001A;
+    }
+}

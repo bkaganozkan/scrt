@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .bg-desktop {
+        position: relative;
+        overflow: visible;
+    }
+
+    .bg-desktop::before {
+        content: "";
+        background-image: url(/src/assets/images/Deco-video.png);
+        background-repeat: no-repeat;
+        background-size: unset;
+        background-position: center;
+        height: 170%;
+        width:135%;
+        z-index: 25;
+        display: inline-block;
+        position: absolute;
+        left: -10%;
+        top:-35%;
+    }
+
+    /* .desktop-shadow{
+        box-shadow: 0px 0px 0px 0px #00000012,
+         0px 25px 0px -12px #00000040;
+
+    } */
+}
